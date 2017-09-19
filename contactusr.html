@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact Us</title>
+    </head>
+    <style>
+            body {
+                text-align: center;
+            }
+            .Navigation {
+                text-align: left;
+            }
+            label {
+                display: block;
+                width: 240px;
+                text-align: right;
+            } 
+        </style>
+    <body>
+        <h1>Beet'in Around the Brush</h1>
+        <hr/>
+        <div class="Navigation">
+            <a href="indexr.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="contactusr.html">Contact Us</a>
+        </div>
+        <hr/>
+        <form action="#" method="post">
+            <table>
+                <tbody>
+            <tr><div>
+                <td><label id="NameLabel" for="Name">Name: </label></td>
+                <td><input id="Name" name="Name" type="text" /></td>
+            </div></tr> 
+            <tr><div>
+                <td><label id="EmailLabel" for="Email">Email: </label> </td>
+                <td><input id="Email" name="Email" type="text" /></td>
+            </div></tr>
+            <tr><div>
+                <td><label id="PhoneLabel" for="Phone">Phone: </label></td>
+                <td><input id="Phone" name="Phone" type="text" /></td>
+            </div></tr>
+            <tr><div>
+                <td><label id="ReasonLabel" for="Reason">Reason for Inquiry: </label> </td>
+                <td><select name="Options">
+                    <option value="Catering">Catering</option>
+                    <option value="Party">Private Party</option>
+                    <option value="Feedback">Feedback</option>
+                    <option value="Other">Other</option>
+                </select> </td>
+            </div></tr>
+            <tr><div>
+                <td><label id="AdditionalInfoLabel" for="AdditionalInfo">Additional Information: </label></td>
+                <td><textarea id="AdditionalInfo" name="AdditionalInfo"></textarea></td>
+            </div></tr>
+            <tr><div>
+                <td><label id="BeenHereLabel" for="BeenHere">Have you been to the restaurant? </label></td>
+                <td><input type="radio" name="BeenHere" value="No" checked/>No
+                <input type="radio" name="BeenHere" value="Yes" />Yes<br/></td>
+            </div></tr>
+            <tr><div>
+                <td><label id="CheckboxLabel" for="Checkbox">Best days to contact you: </label></td>
+                <td><input type="checkbox" name="DayContact" value="Mon"/>M
+                <input type="checkbox" name="DayContact" value="Tue"/>T
+                <input type="checkbox" name="DayContact" value="Wed"/>W
+                <input type="checkbox" name="DayContact" value="Thur"/>Th
+                <input type="checkbox" name="DayContact" value="Fri"/>F</td>
+            </div></tr>
+        </tbody>
+            </table>
+            <div style= "text-align:center;">
+                    <input type="submit" id="SubmitButton" value="Send Request" />
+                </div>
+        </form>
+        <hr/>
+        <footer>
+                88 Turnip Street, Celery Grove, Maine, 03855 </br>
+                207-577-1234
+        </footer>
+    </body>
+</html>
