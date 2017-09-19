@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<style>
+    label {
+        display:inline-block;
+        width: 240px;
+        text-align: right;
+
+</style>
+<html>
+    <form action="#" method="post">
+        <div>
+            <label id="FirstNameLabel" for="FirstName">First Name: </label>
+            <input id="FirstName" name="FirstName" type="text" />
+        </div>
+        <div>
+            <label id="LastNameLabel" for="LastName">Last Name: </label>
+            <input id="LastName" name="LastName" type="text" />
+        </div>
+        <div>
+            <label id="EmailLabel" for="Email">Email: </label>
+            <input id="Email" name="Email" type="text" />
+        </div>
+        <div>
+            <label id="LicenseLabel" for="License">Type of License: </label>
+            <input type="radio" name="license" value="Business" checked/>Business
+            <input type="radio" name="license" value="Personal" />Personal<br/>
+        </div>
+        <div>
+            <label id="ReasonLabel" for="Reason">Reason: </label>
+            <select name="Options">
+                <option value="Reason">Select a Reason</option>
+                <option value="Software">Software Support</option>
+                <option value="Hardware">Hardware Support</option>
+                <option value="Information">Information Request</option>
+            </select>
+        </div>
+        <div>
+            <label id="AdditionalInfoLabel" for="AdditionalInfo">Additional Information: </label>
+            <textarea id="AdditionalInfo" name="AdditionalInfo"></textarea>
+        </div>
+        <div>
+            <label id="CheckboxLabel" for="Checkbox"></label>
+            <input type="checkbox" name="TermsService" value="Yes"/>I have read the terms of service.</br>
+        </div>
+        <div style= "text-align:center;">
+            <input type="submit" id="SubmitButton" value="Send Request" />
+        </div>
+    </form>
+</html>
