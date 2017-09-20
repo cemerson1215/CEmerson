@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+<link href="restaurantStyles.css"
+rel="stylesheet"
+type="text/css" />
 <html>
     <head>
         <title>Contact Us</title>
@@ -15,16 +18,21 @@
                 width: 240px;
                 text-align: right;
             } 
+            #submitButton {
+                text-align:center
+            }
         </style>
     <body>
-        <h1>Beet'in Around the Brush</h1>
-        <hr/>
+        <div class="topOfPage">
+            <h1>Beet'in Around the Brush</h1>        
+            <hr/>
+        </div>
         <div class="Navigation">
-            <a href="indexr.html">Home</a>
+            <a href="Restaurant.html">Home</a>
             <a href="menu.html">Menu</a>
             <a href="contactusr.html">Contact Us</a>
         </div>
-        <hr/>
+        <hr/>       
         <form action="#" method="post">
             <table>
                 <tbody>
@@ -68,12 +76,12 @@
             </div></tr>
         </tbody>
             </table>
-            <div style= "text-align:center;">
+            <div id="submitButton">
                     <input type="submit" id="SubmitButton" value="Send Request" />
                 </div>
         </form>
         <hr/>
-        <footer>
+        <footer class="footer">
                 88 Turnip Street, Celery Grove, Maine, 03855 </br>
                 207-577-1234
         </footer>

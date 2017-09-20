@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+<link href="restaurantStyles.css"
+rel="stylesheet"
+type="text/css" />
 <html>
     <head>
         <title>Home Page</title>
@@ -10,19 +13,24 @@
         .Navigation {
             text-align: left;
         }
+        #titles {
+            font-weight: bold;
+        }
     </style>
     <body>
-        <h1>Beet'in Around the Brush</h1>
-        <hr/>
+        <div class="topOfPage">
+            <h1>Beet'in Around the Brush</h1>        
+            <hr/>
+        </div>
         <div class="Navigation">
-            <a href="indexr.html">Home</a>
+            <a href="Restaurant.html">Home</a>
             <a href="menu.html">Menu</a>
             <a href="contactusr.html">Contact Us</a>
         </div>
         <hr/>
         <table>
             <tbody>
-                <tr style="font-weight: bold;">
+                <tr id= "titles">
                     <td>Beet Burger and Fries</td>
                     <td>Beet Dog and Chips</td>
                     <td>Italian Beet and Peppers</td>
@@ -43,7 +51,7 @@
                     <td>$6.25</td>
                     <td>$8.75</td>
                 </tr>
-                <tr style="font-weight: bold;">
+                <tr id= "titles">
                     <td>Tenderloin and Beets Sandwich</td>
                     <td>Beet Salad</td>
                     <td>Roasted Beets and Brisket Sandwich</td>
@@ -64,7 +72,7 @@
             </tbody>
         </table>
     <hr/>
-        <footer>
+        <footer class="footer">
             88 Turnip Street, Celery Grove, Maine, 03855 </br>
             207-577-1234
         </footer>
