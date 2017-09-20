@@ -2,9 +2,12 @@
     background-color: #8E388E;
     font-size: 50px;
 }
-.footer {
-    background-color: #E08CE0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+body{
+    padding; 0;
 }
+.footer {
+    background-color: #E08CE0;  
+    position: bottom;  
+    width: 100%;
+    bottom: 0px;
+} 
