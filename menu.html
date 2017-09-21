@@ -8,19 +8,23 @@ type="text/css" />
     </head>
     <style>
         body {
-            text-align: center;
+            text-align: center;           
         }
         table {
             background-color:green;
             padding-top: 10px;
             padding-bottom: 10px;
         }
+
         .Navigation {
             text-align: left;
         }
         #titles {
             font-weight: bold;
             font-size: 25px;
+        }
+        #beverages{
+           text-align: left; 
         }
         
     </style>
@@ -37,6 +41,7 @@ type="text/css" />
         <hr/>
         <table>
             <tbody>
+                <caption id="titles" style="background-color: #8E388E;">Food</caption>
                 <tr id= "titles">
                     <td>Beet Burger and Fries</td>
                     <td>Beet Dog and Chips</td>
@@ -78,10 +83,31 @@ type="text/css" />
                 </tr>
             </tbody>
         </table>
+        <table id="beverages" style="width:100%">
+           <caption id="titles" style="background-color: #8E388E;">Beverages</caption> 
+           <tbody>
+               <tr>
+                   <td id="titles">Root Beer</td>
+                   <td>$3.00</td>
+               </tr>
+               <tr>
+                   <td id="titles">Bottled Water</td>
+                   <td>$1.25</td>
+               </tr>
+               <tr>
+                   <td id="titles">Lemonade</td>
+                   <td>$1.00</td>
+               </tr>
+               <tr>
+                   <td id="titles">Iced Tea</td>
+                   <td>$1.25</td>
+               </tr>
+           </tbody>
+        </table>
+    </body>
         <footer class="footer">
         <hr/>
             88 Turnip Street, Celery Grove, Maine, 03855 </br>
             207-577-1234
         </footer>
-    </body>
 </html>
