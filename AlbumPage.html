@@ -1,5 +1,10 @@
 <!DOCTYPE html>
-<link href="albumStyles.css"
+<!--<link rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"/> -->
+      <link rel="stylesheet"
+      href="css/bootstrap.min.css"
+      type="text/css" />
+      <link href="albumStyles.css"
       rel="stylesheet"
       type="text/css" />
 <html>
@@ -23,29 +28,45 @@
             }
             td {
                 font-style:italic;
-                background-color: #C06C28;
             }
-            .image {                
-                background: url(images/Dirt.jpg) no-repeat;
-                background-position: center center;
+            .img-responsive {
                 height: 350px;
-                width: 100%;                
+                width: 100%;
+            }
+            .img-circle {                
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: cover;
+                height: 450px;
+                width: 450px;
+                border-radius: 50%;
+                border: 2px solid #000;
+            }
+            .center-block{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            #table {
+                width: 90%; 
+                margin: 40px;"
             }
         </style>
     </head>
     <div style="text-align:center;">
-        <div class="image">
-           <!-- <img src="images/Dirt.jpg"/> -->
+        <div class="center-block img-responsive img-circle" style="background-image:url(images/Dirt.jpg)">
+                <!-- <img src="images/Dirt.jpg" class="img-responsive img-circle" /> -->
         </div>
-        <h1 style="margin-bottom: 0px; font-family: Monospace;">Dirt</h1>
+        <h1 style="margin-bottom: 0px; font-family: Monospace; font-size: 55px;">Dirt</h1>
         <a href="https://www.aliceinchains.com/">Alice in Chains</a>
-        <h4 style ="margin-top: 0px;">September 29, 1992</h4>
+        <h4 style ="margin-top: 0px; font-size: 40px;">September 29, 1992</h4>
     </div>
     <hr/>
     <body>
         <div style="text-align:center;">
-            <h4 style= "font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Band Members and Producers</h4>
+            <h4 style= "font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 40px;">Band Members and Producers</h4>
         </div>
+        <div id="bandMembers"
         <ul style="margin-left: 40px; font-style:italic;">
                 <li>Layne Staley - lead vocals</li>
                 <li>Jerry Cantrell - lead and rhythm guitars, backing vocals, acoustic guitar</li>
@@ -53,8 +74,10 @@
                 <li>Sean Kinney - drums</li>
                 <li>Dave Jerden - producer</li>
         </ul>
-        <table style="width: 90%; margin: 40px;">
-            <caption style="font-size: 40px;">Tracks</caption>
+        </div>
+        <div id="songs"> <div class="table-responsive">
+        <table id="table" class="table table-responsive table-striped">
+            <caption style="font-size: 40px; text-align:center;">Tracks</caption>
             <thead>
                 <tr bgcolor="grey">
                     <th>Track #</th>
@@ -130,6 +153,7 @@
                 </tr>
             </tbody>
         </table>
+        </div> </div>
         <!--<p>
            Alice in Chains relased their album 'Dirt' over 20 years ago. Described as neither grunge nor metal.
            Recorded during mass riots in LA.            
