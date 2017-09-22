@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<link href="restaurantStyles.css"
-rel="stylesheet"
-type="text/css" />
 <html>
     <head>
         <title>Home Page</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="restaurantStyles.css" rel="stylesheet" type="text/css" />
     </head>
     <style>
         body {
@@ -15,99 +15,149 @@ type="text/css" />
             padding-top: 10px;
             padding-bottom: 10px;
         }
-
         .Navigation {
             text-align: left;
         }
-        #titles {
+        .titles {
             font-weight: bold;
-            font-size: 25px;
+        }
+        .table{
+            border: none;
+      
         }
         #beverages{
            text-align: left; 
+        }      
+        #tableheader{
+            font-weight: bold;
+            font-size: 25px;
+            color: black;
+            text-align: center;
+            background-color:#8E388E;
+        }  
+        #food{
+            text-align:center;
+            border-spacing: .5em;
         }
-        
     </style>
     <body>
-        <div class="topOfPage">
-            <h1>Beet'in Around the Brush</h1>        
-            <hr/>
+        <div class="container-fluid">                   
+            <div class="row topOfPage">
+                <h1>Beet'in Around the Brush</h1>        
+                <hr/>
+            </div>            
+        </div>  
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <ul class="nav nav-pills">
+                        <li><a href="Restaurant.html">
+                                <span class="glyphicon glyphicon-home" id="homeIcon">Home</span>
+                            </a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="contactusr.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+         </div>
+        <hr/>            
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12" id="tableheader">
+                    <h2>Food</h2>
+                </div>
+            </div>
         </div>
-        <div class="Navigation">
-            <a href="Restaurant.html">Home</a>
-            <a href="menu.html">Menu</a>
-            <a href="contactusr.html">Contact Us</a>
-        </div>
-        <hr/>
-        <table>
-            <tbody>
-                <caption id="titles" style="background-color: #8E388E;">Food</caption>
-                <tr id= "titles">
-                    <td>Beet Burger and Fries</td>
-                    <td>Beet Dog and Chips</td>
-                    <td>Italian Beet and Peppers</td>
-                </tr>
-                <tr>
-                    <td>A twist on an American Classic! </br> Groud Beet is mixed with cabbage and panko bread
-                        crumbs to create a delicious patty. Served with hand cut sweet potato fries
-                    </td>
-                    <td>New Ballpark Favorite! </br> Chunks of grilled beet placed between a classic wheat bun.
+        <div id="food">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <h4 class="titles">Beet Burger and Fries</h4>
+                        <p>A twist on an American Classic! </br> Groud Beet is mixed with cabbage and panko bread
+                            crumbs to create a delicious patty. Served with hand cut sweet potato fries.
+                        </br>$6.25</p>
+                </div>                
+                <div class="col-sm-4">
+                    <h4 class="titles">Beet Dog and Chips</h4>
+                    <p>New Ballpark Favorite! </br> Chunks of grilled beet placed between a classic wheat bun.
                         Ketchup, Mustard, and Relish all included. Served with chips or fries.
-                    </td>
-                    <td>Bye Sausage, Beets are in! </br> Spicy sauteed beets are served ontop garlic
+                    </p>
+                    <p>$6.25</p>
+                </div>
+                <div class="col-sm-4">
+                    <h4 class="titles">Italian Beet and Peppers</h4>
+                    <p>Bye Sausage, Beets are in! </br> Spicy sauteed beets are served ontop garlic
                         and herb mashed potatoes with cole slaw or brocolli slaw as a side.
-                    </td>
-                </tr>
-                <tr>
-                    <td>$6.25</td>
-                    <td>$6.25</td>
-                    <td>$8.75</td>
-                </tr>
-                <tr id= "titles">
-                    <td>Tenderloin and Beets Sandwich</td>
-                    <td>Beet Salad</td>
-                    <td>Roasted Beets and Brisket Sandwich</td>
-                </tr>
-                <tr>
-                    <td>This will fill you up!</br> Grilled Beet ontop a tenderloin between a sesame seed 
-                    bun. Pickle, onion, tomato, lettuce, and avocado included. Served with chips or fries.</td>
-                    <td>Classic <br> Spinach, tomatoes, red and yellow peppers, cucumbers, crutons, balsamic
-                    vinegrette, topped with honey grilled Beets.</td>
-                    <td>Southern Flare </br> 14 hr smoked brisket topped with 2 hour smoked Beets. Served on 
-                    homemade thick toast and our famous BBQ sauce. Served with sweet potato fries.</td>
-                </tr>
-                <tr>
-                    <td>$7.50</td>
-                    <td>$5.00</td>
-                    <td>$7.15</td>
-                </tr>
-            </tbody>
-        </table>
-        <table id="beverages" style="width:100%">
-           <caption id="titles" style="background-color: #8E388E;">Beverages</caption> 
-           <tbody>
-               <tr>
-                   <td id="titles">Root Beer</td>
-                   <td>$3.00</td>
-               </tr>
-               <tr>
-                   <td id="titles">Bottled Water</td>
-                   <td>$1.25</td>
-               </tr>
-               <tr>
-                   <td id="titles">Lemonade</td>
-                   <td>$1.00</td>
-               </tr>
-               <tr>
-                   <td id="titles">Iced Tea</td>
-                   <td>$1.25</td>
-               </tr>
-           </tbody>
-        </table>
-    </body>
-        <footer class="footer">
-        <hr/>
-            88 Turnip Street, Celery Grove, Maine, 03855 </br>
-            207-577-1234
-        </footer>
+                    </p>
+                    <p>$8.75</p>
+                </div>
+            </div>           
+            <div class="row">
+                <div class="col-sm-4">
+                    <h4 class="titles">Tenderloin and Beets Sandwhich</h4>
+                    <p>This will fill you up!</br> Grilled Beet ontop a tenderloin between a sesame seed 
+                        bun. Pickle, onion, tomato, lettuce, and avocado included. Served with chips or fries.
+                    </p>
+                    <p>$7.50</p>
+                </div>
+                <div class="col-sm-4">
+                    <h4 class="titles">Beet Salad</h4>
+                    <p>What a Classic!<br> Spinach, tomatoes, red and yellow peppers, cucumbers, crutons, balsamic
+                        vinegrette, topped with honey grilled Beets.
+                    </p>
+                    <p>$5.00</p>
+                </div>
+                <div class="col-sm-4">
+                    <h4 class="titles">Roasted Beets and Brisket Sandwich</h4>
+                        <p>Southern Flare </br> 14 hr smoked brisket topped with 2 hour smoked Beets. Served on 
+                            homemade thick toast and our famous BBQ sauce. Served with sweet potato fries.
+                        </p>
+                        <p>$7.15</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12" id="tableheader">
+                    <h2>Beverages</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-9">
+                    <h4 style="text-align:left">Root Beer</h4>
+                </div>
+                <div class="col-sm-3">
+                    <p>$3.00</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-9">
+                    <h4 style="text-align:left">Bottled Water</h4>
+                </div>
+                <div class="col-sm-3">
+                    <p>$1.25</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-9">
+                    <h4 style="text-align:left">Lemonade</h4>
+                </div>
+                <div class="col-sm-3">
+                    <p>$1.00</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-9">
+                    <h4 style="text-align:left">Ice Tea</h4>
+                </div>
+                <div class="col-sm-3">
+                    <p>$1.25</p>
+                </div>
+            </div> 
+        </div>   
+    </div> 
+    </body>    
+            <footer class="footer">
+                <hr/>
+                88 Turnip Street, Celery Grove, Maine, 03855 </br>
+                207-577-1234
+            </footer>
 </html>

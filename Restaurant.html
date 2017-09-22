@@ -1,58 +1,76 @@
 <!DOCTYPE html>
-<link href="restaurantStyles.css"
-rel="stylesheet"
-type="text/css" />
 <html>
     <head>
         <title>Home Page</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="restaurantStyles.css" rel="stylesheet" type="text/css" />
     </head>
     <style>
         body {
             text-align: center;
-        }
-        .Navigation {
-            text-align: left;
-        }
-        .boxed {
-            border: 1px solid black;
-            margin: 0 auto;
-            text-align: center;
-            width: 500px;
-        }
+        }        
+       
         .content{
             background-color: rgba(11, 168, 11, 0.62);
         }
+        .jumbotron{
+            background-color: #C6E9AA;
+            border: 2px solid black;
+            font-size: 2em;
+        }
     </style>
     <body>
-        <div class="topOfPage">
-            <h1>Beet'in Around the Brush</h1>        
-            <hr/>
+        <div class="row">
+            <div class="col-sm-12 topOfPage">
+                <h1>Beet'in Around the Brush</h1>        
+                <hr/>
+            </div>
         </div>
-        <div class="Navigation">
-            <a href="Restaurant.html">Home</a>
-            <a href="menu.html">Menu</a>
-            <a href="contactusr.html">Contact Us</a>
+        <div class="row">
+            <div class="col-sm-12">
+                <ul class="nav nav-pills">
+                    <li><a href="Restaurant.html">
+                        <span class="glyphicon glyphicon-home" id="homeIcon">Home</span>
+                        </a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="contactusr.html">Contact Us</a></li>
+                </ul>
+            </div>
         </div>
         <hr/>
-        <div class="content">
-            <div>
-                <img src="images/beets.png" alt="Beets" style= "height:400px; width:450px;" />
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="jumbotron text-center">
+                        <h1 style="font-size: 30px;">New Location in Farm Gardens Coming Soon!</h1>
+                    </div>
+                </div>
             </div>
-            <div class="boxed">
-                <p>
-                Welcome to Beet'in Around the Brush! </br>
-                This vegetarian restaurant specializes in creations that always include the fabulous ingredient 
-                of Beets! Family owned and operated for over 50 years, we offer a comfortable atmosphere where 
-                anyone can come and feel welcome. Let us show your taste buds a whole new world.
-                </p>
+            <div class="row">                
+                <div class="col-sm-12 content">
+                    <div>
+                        <img src="images/beets.png" alt="Beets" style= "height:400px; width:450px;" />
+                    </div>
+                </div>
+            </div>  
+            <div class="row">                  
+                <div class="col-sm-12 content">
+                    <div>
+                        <p style="padding-top:15px; margin: 15px 60px 15px 60px;">
+                        Welcome to Beet'in Around the Brush! </br>
+                        This vegetarian restaurant specializes in creations that always include the fabulous ingredient 
+                        of Beets! Family owned and operated for over 50 years, we offer a comfortable atmosphere where 
+                        anyone can come and feel welcome. Let us show your taste buds a whole new world.
+                        </p>
+                    </div>
+                </div>   
             </div>
-        </div>
         <div>
-        <footer class="footer">
-        <hr/>
-            88 Turnip Street, Celery Grove, Maine, 03855 </br>
-            207-577-1234
-        </footer>
-    </div>
-    </body>
+            <footer class="footer">
+            <hr/>
+                88 Turnip Street, Celery Grove, Maine, 03855 </br>
+                207-577-1234
+            </footer>
+        </div>
+    </body>     
 </html>
