@@ -5,6 +5,9 @@
         <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="restaurantStyles.css" rel="stylesheet" type="text/css" />
+        <script src="jquery-3.2.1.js"></script> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+        <script src="js/bootstrap.min.css"></script> 
     </head>
     <style>
             body {
@@ -25,6 +28,7 @@
             #NameLabel, #EmailLabel, #ReasonLabel, #BeenHereLabel, #CheckboxLabel {
                 font-weight: bold;
             }
+
         </style>
     <body>
         <div class="container">
@@ -56,18 +60,21 @@
                     <div class="col-sm-6">
                         <input class="form-control" id="Name" name="Name" type="text"  />
                     </div>
+                    <div class="col-sm-3"></div>
                 </div>
                 <div class="form-group row">
                     <label class="col-sm-3" id="EmailLabel" for="Email">Email: </label>
                     <div class="col-sm-6">
                         <input class="form-control" id="Email" name="Email" type="text"  />
                     </div>
+                    <div class="col-sm-3"></div>
                 </div>
                 <div class="form-group row">
                     <label class="col-sm-3" id="PhoneLabel" for="Phone">Phone: </label>
                     <div class="col-sm-6">
                         <input class="form-control" id="Phone" name="Phone" type="text"  />
                     </div>
+                    <div class="col-sm-3"></div>
                 </div>
                 <div class="form-group row">
                     <label class="col-sm-3" id="ReasonLabel" for="Reason">Reason for Inquiry: </label>
@@ -79,12 +86,14 @@
                             <option value="Other">Other</option>
                         </select>
                     </div>
+                    <div class="col-sm-3"></div>
                 </div>
                 <div class="form-group row">
                     <label class="col-sm-3" id="AdditionalInfoLabel" for="AdditionalInfo">Additional Information: </label>
                     <div class="col-sm-6">
                         <textarea id="AdditionalInfo" name="AdditionalInfo" style="width:300px"></textarea>
                     </div>
+                    <div class="col-sm-3"></div>
                 </div>
                 <div class="form-group row">
                     <label class="col-sm-3" id="BeenHereLabel" for="BeenHere">Have you been to the restaurant? </label>
@@ -92,6 +101,7 @@
                         <input type="radio" name="BeenHere" value="No" checked/>No
                         <input type="radio" name="BeenHere" value="Yes" />Yes<br/>
                     </div>
+                    <div class="col-sm-3"></div>
                 </div>
                 <div class="form-group row">
                     <label class="col-sm-3" id="CheckboxLabel" for="Checkbox">Best days to contact you: </label>
@@ -102,6 +112,7 @@
                         <input type="checkbox" name="DayContact" value="Thur"/>Th
                         <input type="checkbox" name="DayContact" value="Fri"/>F
                     </div>
+                    <div class="col-sm-3"></div>
                 </div>
                 <div class="form-group row">
                     <div class="col-sm-12">

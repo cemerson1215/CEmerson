@@ -1,163 +1,178 @@
-<!DOCTYPE html>
-<!--<link rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"/> -->
-      <link rel="stylesheet"
-      href="css/bootstrap.min.css"
-      type="text/css" />
-      <link href="albumStyles.css"
-      rel="stylesheet"
-      type="text/css" />
+<!DOCTYPE html> 
 <html>
     <head>
         <title>Dirt Album</title>
-        <style>
-            ul {
-                font-style: bold;
-            }
-            a {
-                color: yellow;
-                text-decoration: none;
-            }
-            a:hover {
-                text-decoration: underline;
-                background-color: #DF3A58;
-            }
-            table, th, td {
-                border: 1px solid black;
-                text-align:center;
-            }
-            td {
-                font-style:italic;
-            }
-            .img-responsive {
-                height: 350px;
-                width: 100%;
-            }
-            .img-circle {                
-                background-repeat: no-repeat;
-                background-position: center center;
-                background-size: cover;
-                height: 450px;
-                width: 450px;
-                border-radius: 50%;
-                border: 2px solid #000;
-            }
-            .center-block{
-                display: block;
-                margin-left: auto;
-                margin-right: auto;
-            }
-            #table {
-                width: 90%; 
-                margin: 40px;"
-            }
-        </style>
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link href="albumStyles.css" rel="stylesheet" type="text/css" />
     </head>
-    <div style="text-align:center;">
-        <div class="center-block img-responsive img-circle" style="background-image:url(images/Dirt.jpg)">
-                <!-- <img src="images/Dirt.jpg" class="img-responsive img-circle" /> -->
-        </div>
-        <h1 style="margin-bottom: 0px; font-family: Monospace; font-size: 55px;">Dirt</h1>
-        <a href="https://www.aliceinchains.com/">Alice in Chains</a>
-        <h4 style ="margin-top: 0px; font-size: 40px;">September 29, 1992</h4>
-    </div>
-    <hr/>
+    <style>
+        ul {
+            font-style: bold;
+        }
+        a {
+            color: yellow;
+            text-decoration: none;   
+        }
+        a:hover {
+            text-decoration: underline;
+            background-color: #DF3A58;
+        }
+        table, th, td {
+            border: 1px solid black;
+            text-align:center;
+        }
+        td {
+            font-style:italic;
+        }
+        .img-responsive {
+            height: 350px;
+            width: 100%;
+        }
+        .img-circle {                
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            height: 450px;
+            width: 450px;
+            border-radius: 50%;
+            border: 2px solid #000;
+        }
+        .center-block{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
     <body>
-        <div style="text-align:center;">
-            <h4 style= "font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 40px;">Band Members and Producers</h4>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div style="text-align:center;">
+                        <div class="center-block img-responsive img-circle" style="background-image:url(images/Dirt.jpg)">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-sm-12">
+                    <h1 style="margin-bottom: 0px; font-family: Monospace; font-size: 55px; text-align:center;">Dirt</h1>
+                </div>
+                <div class="col-sm-12">
+                    <a href="https://www.aliceinchains.com/" style="text-align:center;">Alice in Chains</a>
+                </div> 
+                <div class="col-sm-12">
+                    <h4 style ="margin-top: 0px; font-size: 40px; text-align: center;">September 29, 1992</h4>
+                </div>
+            </div>
         </div>
-        <div id="bandMembers"
-        <ul style="margin-left: 40px; font-style:italic;">
-                <li>Layne Staley - lead vocals</li>
-                <li>Jerry Cantrell - lead and rhythm guitars, backing vocals, acoustic guitar</li>
-                <li>Mike Starr - bass</li>
-                <li>Sean Kinney - drums</li>
-                <li>Dave Jerden - producer</li>
-        </ul>
+        <hr/>    
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div style="text-align:center;">
+                        <h4 style= "font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 40px;">Band Members and Producers</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12" dir="lft">
+                    <div id="bandMembers">
+                        <ul style= "font-style:italic;">
+                            <li>Layne Staley - lead vocals</li>
+                            <li>Jerry Cantrell - lead and rhythm guitars, backing vocals, acoustic guitar</li>
+                            <li>Mike Starr - bass</li>
+                            <li>Sean Kinney - drums</li>
+                            <li>Dave Jerden - producer</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div id="songs"> <div class="table-responsive">
-        <table id="table" class="table table-responsive table-striped">
-            <caption style="font-size: 40px; text-align:center;">Tracks</caption>
-            <thead>
-                <tr bgcolor="grey">
-                    <th>Track #</th>
-                    <th>Track Title</th>                        
-                    <th>Track Length</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>Them Bones</td>
-                    <td>2:30</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Dam That River</td>
-                    <td>3:09</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>Rain When I Die</td>
-                    <td>6:01</td>
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td>Sickman</td>
-                    <td>5:29</td>
-                </tr>
-                <tr>
-                    <td>5</td>
-                    <td>Rooster</td>
-                    <td>6:15</td>
-                </tr>
-                <tr>
-                    <td>6</td>
-                    <td>Junkhead</td>
-                    <td>5:09</td>
-                </tr>
-                <tr>
-                    <td>7</td>
-                    <td>Dirt</td>
-                    <td>5:16</td>
-                </tr>
-                <tr>
-                    <td>8</td>
-                    <td>God Smack</td>
-                    <td>3:56</td>
-                </tr>
-                <tr>
-                    <td>9</td>
-                    <td>Intro (Dream Sequence)/Iron Gland</td>
-                    <td>0:43</td>
-                </tr>
-                <tr>
-                    <td>10</td>
-                    <td>Hate to Feel</td>
-                    <td>5:15</td>
-                </tr>
-                <tr>
-                    <td>11</td>
-                    <td>Angry Chair</td>
-                    <td>4:48</td>
-                </tr>
-                <tr>
-                    <td>12</td>
-                    <td>Down in a Hole</td>
-                    <td>5:38</td>
-                </tr>
-                <tr>
-                    <td>13</td>
-                    <td>Would?</td>
-                    <td>3:28</td>
-                </tr>
-            </tbody>
-        </table>
-        </div> </div>
-        <!--<p>
-           Alice in Chains relased their album 'Dirt' over 20 years ago. Described as neither grunge nor metal.
-           Recorded during mass riots in LA.            
-        </p>
-        <h1>Band Members</h1>-->
-
+        <div class="container-fluid">                       
+            <div class="table-responsive">                  
+                <table id="table" class="table table-responsive table-striped">
+                    <div class="row">
+                        <div class="col-sm-12"> 
+                            <caption style="font-size: 40px; text-align:center;">Tracks</caption>
+                        </div>
+                    </div>                        
+                    <thead>
+                        <tr bgcolor="grey">
+                            <th class="col-sm-4">Track #</th>
+                            <th class="col-sm-4">Track Title</th>                        
+                            <th class="col-sm-4">Track Length</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Them Bones</td>
+                            <td>2:30</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Dam That River</td>
+                            <td>3:09</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Rain When I Die</td>
+                            <td>6:01</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Sickman</td>
+                            <td>5:29</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Rooster</td>
+                            <td>6:15</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Junkhead</td>
+                            <td>5:09</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>Dirt</td>
+                            <td>5:16</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>God Smack</td>
+                            <td>3:56</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>Intro (Dream Sequence)/Iron Gland</td>
+                            <td>0:43</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>Hate to Feel</td>
+                            <td>5:15</td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>Angry Chair</td>
+                            <td>4:48</td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>Down in a Hole</td>
+                            <td>5:38</td>
+                        </tr>
+                        <tr>
+                            <td>13</td>
+                            <td>Would?</td>
+                            <td>3:28</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div> 
     </body>
+</html>
