@@ -22,7 +22,7 @@ public interface CardService {
 
     public Card retrieveCardById(int cardId);
 
-    public List<Card> retrieveAllCArds();
+    public List<Card> retrieveAllCards();
 
     public List<Card> retrieveCardsByManufactId(int manufactId);
 

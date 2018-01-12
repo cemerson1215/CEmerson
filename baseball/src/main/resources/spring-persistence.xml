@@ -3,7 +3,7 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns:context="http://www.springframework.org/schema/context"
        xmlns:tx="http://www.springframework.org/schema/tx"
-              xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:aop="http://www.springframework.org/schema/aop"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
                            http://www.springframework.org/schema/beans/spring-beans.xsd
                            http://www.springframework.org/schema/mvc
@@ -28,7 +28,7 @@
     </bean>
 
     <bean id="transactionManager"
-      class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+          class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
         <property name="dataSource" ref="dataSource"/>
     </bean>
 
@@ -44,5 +44,14 @@
           class="com.sg.baseball.dao.ManufactuerDaoDbImpl">
         <property name="jdbcTemplate" ref="jdbcTemplate"/>
     </bean>
+    <bean id="manufactService"
+          class="com.sg.baseball.service.ManufactServiceImpl">
+        <property name="manufactDao" ref="manufactDao"/>
+    </bean>
+    <bean id="cardService"
+          class="com.sg.baseball.service.CardServiceImpl">
+        <property name="cardDao" ref="cardDao"/>
+        <property name="manufactService" ref="manufactService"/>
+    </bean>        
     
 </beans>

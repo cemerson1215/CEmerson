@@ -17,7 +17,7 @@ public interface CardDao {
     public void removeCard (int cardId);
     public Card updateCard (Card card);
     public Card retrieveCardById (int cardId);
-    public List<Card> retrieveAllCArds ();
+    public List<Card> retrieveAllCards ();
     public List<Card> retrieveCardsByManufactId (int manufactId);
     public List<Card> retrieveCardsByYear (int year);
     public List<Card> retrieveCardsByPlayer (String playerName);

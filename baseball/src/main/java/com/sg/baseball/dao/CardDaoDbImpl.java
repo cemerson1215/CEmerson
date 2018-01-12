@@ -66,7 +66,7 @@ public class CardDaoDbImpl implements CardDao {
     }
 
     @Override
-    public List<Card> retrieveAllCArds() {
+    public List<Card> retrieveAllCards() {
         return jdbcTemplate.query(SQL_SELECT_ALL_CARDS, new CardMapper());
     }
 
