@@ -16,6 +16,21 @@
         };
     });
 
+    app.controller("ReviewController", function(){
+        this.review ={};
+        this.addReview = function(product) {
+            product.reviews.push(this.review);
+            this.review={};
+        };
+    });
+
+    app.directive('productTitle', function() {
+        return {
+            restrict: 'E', // e is for element, the type of element
+            templateUrl: 'product-title.html' //url 
+        };
+    });
+
     var gems = [
         {
             name: 'Dodecahedron',

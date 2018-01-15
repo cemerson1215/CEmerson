@@ -3,18 +3,16 @@
 
 <head>
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body ng-controller="StoreController as store">
     <ul class="list-group">
         <li class="list-group-item" ng-repeat="product in store.products">
-            <h3>
-                {{product.name}}
-                <br> {{product.description}}
-                <em class="pull-right">{{product.price | currency}}</em>
-                <br>
-                <img ng-src="{{product.images[0].full}}" />
-            </h3>
+            <div ng-include src="'product-title.html'"> 
+            </div>
+                           
+            <img ng-src="{{product.images[0].full}}" />
             <section ng-controller="PanelController as panel">
                 <ul class="nav nav-pills">
                     <li ng-class="{active: panel.isSelected(1)}">
@@ -44,18 +42,19 @@
                         <cite>- {{review.author}}</cite>
                         <br>
                     </backquote>
-                    <form name="reviewForm">
+                    <form name="reviewForm" ng-controller="ReviewController as reviewCtrl"
+                    ng-submit="reviewForm.$valid && reviewCtrl.addReview(product)" novalidate>
                         <blockquote>
-                            <b>Stars: {{review.stars}}</b>
-                            {{review.body}}
-                            <br><cite>- {{review.author}}</cite>
+                            <b>Stars: {{reviewCtrl.review.stars}}</b>
+                            {{reviewCtrl.review.body}}
+                            <br><cite>- {{reviewCtrl.review.author}}</cite>
                         </blockquote>
                         <div class="container">
                             <div class="form-group row">
                                 <label>Submit a Review</label>
                             </div>
                             <div class="form-group row">
-                                <select ng-model="review.stars">
+                                <select ng-model="reviewCtrl.review.stars" required>
                                     <option value="1">1 star</option>
                                     <option value="2">2 star</option>
                                     <option value="3">3 star</option>
@@ -65,15 +64,16 @@
                             </div>
                             <div class="form-group row">
                                 <div class="col-md-2">
-                                    <textarea ng-model="review.body" placeholder="Review"></textarea>
+                                    <textarea ng-model="reviewCtrl.review.body" placeholder="Review" required></textarea>
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <div class="col-md-2">
-                                    <input ng-model="review.author" class="form-control" name="email" type="email" placeholder="cassi@cassi.com" />
+                                    <input ng-model="reviewCtrl.review.author" class="form-control" name="email" type="email" placeholder="cassi@cassi.com" required/>
                                 </div>
                             </div>
                             <div class="form-group row">
+                                <div>reviewForm is {{reviewForm.$valid}}</div>
                                 <input type="submit" value="Submit" />
                             </div>
                         </div>

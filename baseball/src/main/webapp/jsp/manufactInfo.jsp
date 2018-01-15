@@ -1,6 +1,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="s" uri="http://www.springframework.org/tags"%>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
+<%@ taglib prefix="sf" uri="http://www.springframework.org/tags/form"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -16,8 +17,26 @@
         </div>
         <div class="container">
             <a href="${pageContext.request.contextPath}/">Home</a>
+            <hr>
             <div id="createManufact">
-                
+                <sf:form class="form-horizontal" role="form" modelAttribute="Manufact" action="createManufact" method="POST">
+                    <div class="form-group">
+                        <label for="manufactName" class="col-md-3">Name: </label>
+                        <div class="col-md-5">
+                            <sf:input type="text" class="form-control" path="name" placeholder="Manufact. Name"/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-offset-3 col-md-4">
+                            <a href="${pageContext.request.contextPath}/" class="btn btn-default" id="create-cancel-button" >
+                                Cancel
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <input type="submit" id="create-button" class="btn btn-default" value="Create Manufacturer"/>
+                        </div>
+                    </div>
+                </sf:form>    
             </div>
             <div id="listManufacts">
                 <h4>Current Manufacturers</h4>
